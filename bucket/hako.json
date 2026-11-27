@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0",
+  "description": "Local-first desktop app for managing Docker on remote Linux servers",
+  "homepage": "https://github.com/Panharoth06/hako",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/Panharoth06/hako/releases/download/v0.1.0/Hako_0.1.0_windows-x64-portable.zip",
+      "hash": "f97dcaaa9d1964b3f72b17d21dd6a39d535bfcdeaf108bbd5bf499ddc3764840"
+    }
+  },
+  "bin": "Hako.exe",
+  "shortcuts": [
+    [
+      "Hako.exe",
+      "Hako"
+    ]
+  ],
+  "notes": [
+    "Scoop installs Hako as a portable package. To upgrade via Scoop run: scoop update hako",
+    "Hako also supports in-app updates, which install to %LOCALAPPDATA%\\Hako."
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/Panharoth06/hako/releases/download/v$version/Hako_$version_windows-x64-portable.zip"
+      }
+    }
+  }
+}
